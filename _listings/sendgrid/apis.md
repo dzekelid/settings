@@ -35,7 +35,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/sendgrid/mail-settings-spam-check-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/sendgrid/mail-settings-template-get.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
