@@ -26,7 +26,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/gmail/userid-settings-autoforwarding-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/gmail/userid-settings-autoforwarding-put.md
 x-common:
 - type: x-auth-scopes
   url: https://developers.google.com/gmail/api/auth/scopes
