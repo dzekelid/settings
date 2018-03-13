@@ -35,7 +35,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/sendgrid/partner-settings-new-relic-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/settings/master/_listings/sendgrid/partner-settings-new-relic-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
