@@ -26,7 +26,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-pop-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-vacation-get.md
 x-common:
 - type: x-auth-scopes
   url: https://developers.google.com/gmail/api/auth/scopes
