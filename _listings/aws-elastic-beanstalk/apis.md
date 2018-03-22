@@ -31,7 +31,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-describeconfigurationsettings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
