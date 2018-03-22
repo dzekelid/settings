@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetAccountSettings&k=1:
+  /?Action=GetAccountSettings:
     get:
       summary: ' Get Account Settings '
       description: Returns the number of unmetered iOS and/or unmetered Android devices
