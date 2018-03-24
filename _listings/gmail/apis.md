@@ -12,8 +12,8 @@ tags:
 - Productivity
 - Google APIs
 - Email
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -26,7 +26,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-vacation-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-autoforwarding-get.md
 x-common:
 - type: x-auth-scopes
   url: https://developers.google.com/gmail/api/auth/scopes
