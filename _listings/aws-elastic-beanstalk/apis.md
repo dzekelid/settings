@@ -17,8 +17,8 @@ tags:
 - Deployment
 - Containers
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -31,7 +31,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-describeconfigurationsettings-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
