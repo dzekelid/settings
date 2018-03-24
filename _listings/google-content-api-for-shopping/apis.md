@@ -29,7 +29,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/google-content-api-for-shopping/shippingsettings-batch-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/google-content-api-for-shopping/merchantid-shippingsettings-get.md
 x-common:
 - type: x-best-practices
   url: https://developers.google.com/shopping-content/v2/best-practices
