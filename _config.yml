@@ -4,7 +4,7 @@ url: settings.streamdata.gallery
 tag: Settings
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery
+github_user: streamdata-gallery-topics
 github_repo: settings
 github_branch: master
 collections:
