@@ -36,8 +36,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Get Mail Settings Footer
-  description: "**This endpoint allows you to retrieve your current Footer mail settings.**\n\nThe
+- name: SendGrid Patch Mail Settings Footer
+  description: "**This endpoint allows you to update your current Footer mail settings.**\n\nThe
     footer setting will insert a custom footer at the bottom of the text and HTML
     bodies. Use the embedded HTML editor and plain text entry fields to create the
     content of the footers to be inserted into your emails.\n\nMail settings allow
@@ -50,9 +50,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-footer-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-footer-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-footer-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
