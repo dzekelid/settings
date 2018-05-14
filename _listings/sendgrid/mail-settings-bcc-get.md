@@ -1,11 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Get Mail Settings Bcc
+  description: "**This endpoint allows you to retrieve your current BCC mail settings.**\n\nWhen
+    the BCC mail setting is enabled, SendGrid will automatically send a blind carbon
+    copy (BCC) to an address for every email sent without adding that address to the
+    header. Please note that only one email address may be entered in this field,
+    if you wish to distribute BCCs to multiple addresses you will need to create a
+    distribution group or use forwarding rules.\n\nMail settings allow you to tell
+    SendGrid specific things to do to every email that you send to your recipients
+    over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
