@@ -70,21 +70,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-patch.md
-- name: SendGrid Patch User Settings Enforced Tls
-  description: "**This endpoint allows you to update your current Enforced TLS settings.**\n\nThe
-    Enforced TLS settings specify whether or not the recipient is required to support
-    TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html)
-    for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled
-    and the recipient does not support TLS or have a valid certificate, we drop the
-    message and send a block event with \u201CTLS required but not supported\u201D
-    as the description."
+- name: SendGrid Get User Webhooks Event Settings
+  description: "**This endpoint allows you to retrieve your current event webhook
+    settings.**\n\nIf an event type is marked as `true`, then the event webhook will
+    include information about that event.\n\nSendGrid\u2019s Event Webhook will notify
+    a URL of your choice via HTTP POST with information about events that occur as
+    SendGrid processes your email.\n\nCommon uses of this data are to remove unsubscribes,
+    react to spam reports, determine unengaged recipients, identify bounced email
+    addresses, or create advanced analytics of your email program."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-event-settings-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-event-settings-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
