@@ -36,11 +36,11 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Add Access Settings Whitelist
+- name: SendGrid Delete Access Settings Whitelist Rule
   description: |-
-    **This endpoint allows you to add one or more IP addresses to your IP whitelist.**
+    **This endpoint allows you to remove a specific IP address from your IP whitelist.**
 
-    When adding an IP to your whitelist, include the IP address in an array. You can whitelist one IP at a time, or you can whitelist multiple IPs at once.
+    When removing a specific IP address from your whitelist, you must include the ID in your call.
 
     IP Access Management allows you to control which IP addresses can be used to access your account, either through the User Interface or the API. There is no limit to the number of IP addresses that you can add to your whitelist. It is possible to remove your own IP address from the whitelist, thus preventing yourself from accessing your account.
 
@@ -51,7 +51,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/access-settings-whitelist-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/access-settings-whitelist-rule-id-delete.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
