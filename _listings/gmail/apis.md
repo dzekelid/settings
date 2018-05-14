@@ -28,14 +28,14 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-vacation-put.md
 - name: Gmail Update IMAP Setting
-  description: Updates IMAP settings.
+  description: Updates POP settings.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gmail-icon.png
   humanURL: https://www.google.com/gmail/
   baseURL: https://www.googleapis.com//gmail/v1/users
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-imap-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-pop-put.md
 x-common:
 - type: x-auth-scopes
   url: https://developers.google.com/gmail/api/auth/scopes
