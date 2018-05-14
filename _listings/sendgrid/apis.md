@@ -36,8 +36,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Get Mail Settings Bounce Purge
-  description: "**This endpoint allows you to retrieve your current bounce purge settings.**\n\nThis
+- name: SendGrid Patch Mail Settings Bounce Purge
+  description: "**This endpoint allows you to update your current bounce purge settings.**\n\nThis
     setting allows you to set a schedule for SendGrid to automatically delete contacts
     from your soft and hard bounce suppression lists.\n\nMail settings allow you to
     tell SendGrid specific things to do to every email that you send to your recipients
@@ -49,9 +49,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
