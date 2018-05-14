@@ -52,8 +52,8 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get-postman.md
-- name: SendGrid Get Tracking Settings Open
-  description: "**This endpoint allows you to retrieve your current settings for open
+- name: SendGrid Patch Tracking Settings Open
+  description: "**This endpoint allows you to update your current settings for open
     tracking.**\n\nOpen Tracking adds an invisible image at the end of the email which
     can track email opens. If the email recipient has images enabled on their email
     client, a request to SendGrid\u2019s server for the invisible image is executed
@@ -69,9 +69,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
