@@ -1,11 +1,17 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Get Mail Settings Address Whitelist
+  description: "**This endpoint allows you to retrieve your current email address
+    whitelist settings.**\n\nThe address whitelist setting whitelists a specified
+    email address or domain for which mail should never be suppressed. For example,
+    you own the domain \u201Cexample.com,\u201D and one or more of your recipients
+    use email@example.com addresses, by placing example.com in the address whitelist
+    setting, all bounces, blocks, and unsubscribes logged for that domain will be
+    ignored and sent as if under normal sending conditions.\n\nMail settings allow
+    you to tell SendGrid specific things to do to every email that you send to your
+    recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
