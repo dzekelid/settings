@@ -33,19 +33,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/microsoft-graph/users-id|userprincipalname-mailboxsettings-patch.md
-- name: Microsoft Graph API Get User Mailbox Settings
-  description: Get user mailbox settings Get the user's mailboxSettings. This includes
-    settings for automatic replies (notify people automatically upon receipt of their
-    email), locale (language and country/region), and time zone.
+- name: Microsoft Graph API Update User Mailbox Settings
+  description: Update user mailbox settings Update one or more settings for the user's
+    mailbox. This includes settings for automatic replies (notify people automatically
+    upon receipt of their email), locale, or time zone.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png
   humanURL: https://developer.microsoft.com/en-us/graph/
   baseURL: https://graph.microsoft.com//
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/microsoft-graph/users-id|userprincipalname-mailboxsettings-timezone-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/microsoft-graph/me-mailboxsettings-patch.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/microsoft-graph/users-id|userprincipalname-mailboxsettings-timezone-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/microsoft-graph/me-mailboxsettings-patch-postman.md
 x-common:
 - type: x-change-loge
   url: https://developer.microsoft.com/en-us/graph/docs/overview/changelog
