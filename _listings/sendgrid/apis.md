@@ -36,14 +36,11 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Patch Mail Settings Bcc
-  description: "**This endpoint allows you to update your current BCC mail settings.**\n\nWhen
-    the BCC mail setting is enabled, SendGrid will automatically send a blind carbon
-    copy (BCC) to an address for every email sent without adding that address to the
-    header. Please note that only one email address may be entered in this field,
-    if you wish to distribute BCCs to multiple addresses you will need to create a
-    distribution group or use forwarding rules.\n\nMail settings allow you to tell
-    SendGrid specific things to do to every email that you send to your recipients
+- name: SendGrid Get Mail Settings Bounce Purge
+  description: "**This endpoint allows you to retrieve your current bounce purge settings.**\n\nThis
+    setting allows you to set a schedule for SendGrid to automatically delete contacts
+    from your soft and hard bounce suppression lists.\n\nMail settings allow you to
+    tell SendGrid specific things to do to every email that you send to your recipients
     over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
     or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
@@ -52,7 +49,9 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
