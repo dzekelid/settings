@@ -1,11 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Get Mail Settings Forward Spam
+  description: "**This endpoint allows you to retrieve your current Forward Spam mail
+    settings.**\n\nEnabling the forward spam setting allows you to specify an email
+    address to which spam reports will be forwarded.\n\nMail settings allow you to
+    tell SendGrid specific things to do to every email that you send to your recipients
+    over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
