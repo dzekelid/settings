@@ -25,15 +25,15 @@ modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
-- name: Akamai API Get Client Settings
-  description: Get Client Settings
+- name: Akamai API Update Client Settings
+  description: Update Client Settings
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Akamai_Technologies,_Inc._Logo.png
   humanURL: https://akamai.com
   baseURL: https://developer.akamai.com//
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/akamai/papi-v0-client-settings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/akamai/papi-v0-client-settings-put.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
