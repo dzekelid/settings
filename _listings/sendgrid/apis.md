@@ -36,24 +36,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Get Access Settings Whitelist Rule
-  description: |-
-    **This endpoint allows you to retreive a specific IP address that has been whitelisted.**
-
-    You must include the ID for the specific IP address you want to retrieve in your call.
-
-    IP Access Management allows you to control which IP addresses can be used to access your account, either through the User Interface or the API. There is no limit to the number of IP addresses that you can add to your whitelist. It is possible to remove your own IP address from the whitelist, thus preventing yourself from accessing your account.
-
-    For more information, please see our [User Guide](http://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html).
+- name: SendGrid Get Mail Settings
+  description: "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail
+    settings allow you to tell SendGrid specific things to do to every email that
+    you send to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/access-settings-whitelist-rule-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/access-settings-whitelist-rule-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
