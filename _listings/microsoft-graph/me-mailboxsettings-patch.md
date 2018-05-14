@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Microsoft Graph API
-  description: 'Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft
-    cloud services through a single endpoint: https://graph.microsoft.com. Microsoft
-    Graph simplifies queries that would otherwise be more complex.'
+  title: Microsoft Graph API Update User Mailbox Settings
+  description: Update user mailbox settings Update one or more settings for the user's
+    mailbox. This includes settings for automatic replies (notify people automatically
+    upon receipt of their email), locale, or time zone.
   version: 1.0.0
 host: graph.microsoft.com
 basePath: /
