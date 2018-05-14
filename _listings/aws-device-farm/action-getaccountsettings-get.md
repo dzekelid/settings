@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Device Farm API
+  title: AWS Device Farm API Get Account Settings
   version: 1.0.0
+  description: Returns the number of unmetered iOS and/or unmetered Android devices
+    that have been purchased by the account.
 schemes:
 - http
 produces:
