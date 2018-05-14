@@ -36,10 +36,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Get Mail Settings
-  description: "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail
-    settings allow you to tell SendGrid specific things to do to every email that
-    you send to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+- name: SendGrid Get Mail Settings Address Whitelist
+  description: "**This endpoint allows you to retrieve your current email address
+    whitelist settings.**\n\nThe address whitelist setting whitelists a specified
+    email address or domain for which mail should never be suppressed. For example,
+    you own the domain \u201Cexample.com,\u201D and one or more of your recipients
+    use email@example.com addresses, by placing example.com in the address whitelist
+    setting, all bounces, blocks, and unsubscribes logged for that domain will be
+    ignored and sent as if under normal sending conditions.\n\nMail settings allow
+    you to tell SendGrid specific things to do to every email that you send to your
+    recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
     or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
@@ -47,9 +53,9 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-address-whitelist-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-address-whitelist-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
