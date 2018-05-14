@@ -36,12 +36,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Patch Mail Settings Bounce Purge
-  description: "**This endpoint allows you to update your current bounce purge settings.**\n\nThis
-    setting allows you to set a schedule for SendGrid to automatically delete contacts
-    from your soft and hard bounce suppression lists.\n\nMail settings allow you to
-    tell SendGrid specific things to do to every email that you send to your recipients
-    over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+- name: SendGrid Get Mail Settings Footer
+  description: "**This endpoint allows you to retrieve your current Footer mail settings.**\n\nThe
+    footer setting will insert a custom footer at the bottom of the text and HTML
+    bodies. Use the embedded HTML editor and plain text entry fields to create the
+    content of the footers to be inserted into your emails.\n\nMail settings allow
+    you to tell SendGrid specific things to do to every email that you send to your
+    recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
     or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
@@ -49,7 +50,9 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bounce-purge-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-footer-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-footer-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
