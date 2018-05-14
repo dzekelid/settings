@@ -52,20 +52,24 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get-postman.md
-- name: SendGrid Patch Mail Settings Spam Check
-  description: "**This endpoint allows you to update your current spam checker mail
-    settings.**\n\nThe spam checker filter notifies you when emails are detected that
-    exceed a predefined spam threshold.\n\nMail settings allow you to tell SendGrid
-    specific things to do to every email that you send to your recipients over SendGrid\u2019s
-    [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP
-    Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+- name: SendGrid Get Mail Settings Template
+  description: "**This endpoint allows you to retrieve your current legacy email template
+    settings.**\n\nThis setting refers to our original email templates. We currently
+    support more fully featured [transactional templates](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html).
+    \n\nThe legacy email template setting wraps an HTML template around your email
+    content. This can be useful for sending out marketing email and/or other HTML
+    formatted messages.\n\nMail settings allow you to tell SendGrid specific things
+    to do to every email that you send to your recipients over SendGrid\u2019s [Web
+    API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-spam-check-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-template-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-template-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
