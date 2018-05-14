@@ -36,24 +36,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Patch Mail Settings Address Whitelist
-  description: "**This endpoint allows you to update your current email address whitelist
-    settings.**\n\nThe address whitelist setting whitelists a specified email address
-    or domain for which mail should never be suppressed. For example, you own the
-    domain \u201Cexample.com,\u201D and one or more of your recipients use email@example.com
-    addresses, by placing example.com in the address whitelist setting, all bounces,
-    blocks, and unsubscribes logged for that domain will be ignored and sent as if
-    under normal sending conditions.\n\nMail settings allow you to tell SendGrid specific
-    things to do to every email that you send to your recipients over SendGrid\u2019s
-    [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP
-    Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+- name: SendGrid Get Mail Settings Bcc
+  description: "**This endpoint allows you to retrieve your current BCC mail settings.**\n\nWhen
+    the BCC mail setting is enabled, SendGrid will automatically send a blind carbon
+    copy (BCC) to an address for every email sent without adding that address to the
+    header. Please note that only one email address may be entered in this field,
+    if you wish to distribute BCCs to multiple addresses you will need to create a
+    distribution group or use forwarding rules.\n\nMail settings allow you to tell
+    SendGrid specific things to do to every email that you send to your recipients
+    over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-address-whitelist-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
