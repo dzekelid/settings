@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Elastic Beanstalk API
+  title: AWS Elastic Beanstalk API Validate Configuration Settings
   version: 1.0.0
+  description: |-
+    Takes a set of configuration settings and either a configuration template or
+          environment, and determines whether those values are valid.
 schemes:
 - http
 produces:
