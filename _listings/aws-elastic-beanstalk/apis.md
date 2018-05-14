@@ -32,18 +32,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
-- name: AWS Elastic Beanstalk API Describe Configuration Settings
+- name: AWS Elastic Beanstalk API Validate Configuration Settings
   description: |-
-    Returns a description of the settings for the specified configuration set, that is,
-          either a configuration template or the configuration set associated with a running
-          environment.
+    Takes a set of configuration settings and either a configuration template or
+          environment, and determines whether those values are valid.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
   baseURL: http:://{host}//
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-describeconfigurationsettings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
