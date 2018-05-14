@@ -36,8 +36,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
-- name: SendGrid Get Mail Settings Bcc
-  description: "**This endpoint allows you to retrieve your current BCC mail settings.**\n\nWhen
+- name: SendGrid Patch Mail Settings Bcc
+  description: "**This endpoint allows you to update your current BCC mail settings.**\n\nWhen
     the BCC mail setting is enabled, SendGrid will automatically send a blind carbon
     copy (BCC) to an address for every email sent without adding that address to the
     header. Please note that only one email address may be entered in this field,
@@ -52,9 +52,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-bcc-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
