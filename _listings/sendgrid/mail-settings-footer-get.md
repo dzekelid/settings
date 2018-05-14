@@ -1,11 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Get Mail Settings Footer
+  description: "**This endpoint allows you to retrieve your current Footer mail settings.**\n\nThe
+    footer setting will insert a custom footer at the bottom of the text and HTML
+    bodies. Use the embedded HTML editor and plain text entry fields to create the
+    content of the footers to be inserted into your emails.\n\nMail settings allow
+    you to tell SendGrid specific things to do to every email that you send to your
+    recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
+    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
