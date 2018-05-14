@@ -70,8 +70,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-patch.md
-- name: SendGrid Get User Settings Enforced Tls
-  description: "**This endpoint allows you to retrieve your current Enforced TLS settings.**\n\nThe
+- name: SendGrid Patch User Settings Enforced Tls
+  description: "**This endpoint allows you to update your current Enforced TLS settings.**\n\nThe
     Enforced TLS settings specify whether or not the recipient is required to support
     TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html)
     for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled
@@ -84,9 +84,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
