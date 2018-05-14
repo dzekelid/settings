@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Gmail
-  description: Access Gmail mailboxes including sending user email.
+  title: Gmail Get Auto-Forwarding Settings
+  description: Gets the auto-forwarding setting for the specified account.
   contact:
     name: Google
     url: https://google.com
