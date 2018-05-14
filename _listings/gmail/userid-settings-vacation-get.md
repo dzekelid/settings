@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Gmail
-  description: Access Gmail mailboxes including sending user email.
+  title: Gmail Get Vacation Settings
+  description: Gets vacation responder settings.
   contact:
     name: Google
     url: https://google.com
