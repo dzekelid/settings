@@ -52,8 +52,8 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-forward-bounce-get-postman.md
-- name: SendGrid Get Mail Settings Spam Check
-  description: "**This endpoint allows you to retrieve your current Spam Checker mail
+- name: SendGrid Patch Mail Settings Spam Check
+  description: "**This endpoint allows you to update your current spam checker mail
     settings.**\n\nThe spam checker filter notifies you when emails are detected that
     exceed a predefined spam threshold.\n\nMail settings allow you to tell SendGrid
     specific things to do to every email that you send to your recipients over SendGrid\u2019s
@@ -65,9 +65,7 @@ apis:
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-spam-check-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-spam-check-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/mail-settings-spam-check-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
