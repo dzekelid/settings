@@ -27,17 +27,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-vacation-put.md
-- name: Gmail Get Auto-Forwarding Settings
-  description: Gets the auto-forwarding setting for the specified account.
+- name: Gmail Update Auto-Forwarding Settings
+  description: |-
+    Updates the auto-forwarding setting for the specified account. A verified forwarding address must be specified when auto-forwarding is enabled.
+
+    This method is only available to service account clients that have been delegated domain-wide authority.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gmail-icon.png
   humanURL: https://www.google.com/gmail/
   baseURL: https://www.googleapis.com//gmail/v1/users
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-autoforwarding-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-autoforwarding-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/gmail/userid-settings-autoforwarding-put.md
 x-common:
 - type: x-auth-scopes
   url: https://developers.google.com/gmail/api/auth/scopes
