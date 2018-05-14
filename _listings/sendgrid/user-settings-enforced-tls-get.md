@@ -1,11 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Get User Settings Enforced Tls
+  description: "**This endpoint allows you to retrieve your current Enforced TLS settings.**\n\nThe
+    Enforced TLS settings specify whether or not the recipient is required to support
+    TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html)
+    for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled
+    and the recipient does not support TLS or have a valid certificate, we drop the
+    message and send a block event with \u201CTLS required but not supported\u201D
+    as the description."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
