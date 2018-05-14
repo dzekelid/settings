@@ -70,22 +70,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-open-patch.md
-- name: SendGrid Patch Tracking Settings Subscription
-  description: |-
-    **This endpoint allows you to update your current settings for subscription tracking.**
-
-    Subscription tracking adds links to the bottom of your emails that allows your recipients to subscribe to, or unsubscribe from, your emails.
-
-    You can track a variety of the actions your recipients may take when interacting with your emails including opening your emails, clicking on links in your emails, and subscribing to (or unsubscribing from) your emails.
-
-    For more information about tracking, please see our [User Guide](https://sendgrid.com/docs/User_Guide/Settings/tracking.html).
+- name: SendGrid Get User Settings Enforced Tls
+  description: "**This endpoint allows you to retrieve your current Enforced TLS settings.**\n\nThe
+    Enforced TLS settings specify whether or not the recipient is required to support
+    TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html)
+    for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled
+    and the recipient does not support TLS or have a valid certificate, we drop the
+    message and send a block event with \u201CTLS required but not supported\u201D
+    as the description."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/tracking-settings-subscription-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/sendgrid/user-settings-enforced-tls-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
