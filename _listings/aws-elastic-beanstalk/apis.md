@@ -1,65 +1,68 @@
 ---
 name: AWS Elastic Beanstalk
+x-slug: aws-elastic-beanstalk
 description: AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling
-  web applications and services developed with Java,nbsp;.NET, PHP, Node.js, Python,
-  Ruby, Go, andnbsp;Dockernbsp;on familiar servers such as Apache, Nginx, Passenger,
-  andnbsp;IIS.nYou can simply upload your code and Elastic Beanstalk automatically
-  handles the deployment, from capacity provisioning, load balancing, auto-scaling
-  to application health monitoring. At the same time, you retain full control over
-  the AWS resources powering your application and can access the underlying resources
-  at any time.nThere is no additional charge for Elastic Beanstalk - you pay only
-  for the AWS resources needed to store and run your applications.
+  web applications and services developed with Java,.NET, PHP, Node.js, Python, Ruby,
+  Go, andDockeron familiar servers such as Apache, Nginx, Passenger, andIIS.You can
+  simply upload your code and Elastic Beanstalk automatically handles the deployment,
+  from capacity provisioning, load balancing, auto-scaling to application health monitoring.
+  At the same time, you retain full control over the AWS resources powering your application
+  and can access the underlying resources at any time.There is no additional charge
+  for Elastic Beanstalk - you pay only for the AWS resources needed to store and run
+  your applications.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
 x-kinRank: "10"
-x-alexaRank: ""
-tags:
-- Stack Network
-- Deployment
-- Containers
-- Amazon Web Services
-created: "2018-03-24"
-modified: "2018-03-24"
-url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/apis.yaml
+x-alexaRank: "0"
+tags: Settings
+created: "2018-06-20"
+modified: "2018-06-20"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Elastic Beanstalk API
-  description: AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling
-    web applications and services developed with Java,nbsp;
+- name: AWS Elastic Beanstalk API Describe Configuration Settings
+  x-api-slug: aws-elastic-beanstalk-api
+  description: |-
+    Returns a description of the settings for the specified configuration set, that is,
+          either a configuration template or the configuration set associated with a running
+          environment.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
-  humanURL: ""
-  baseURL: :///
-  tags: Settings
+  humanURL: https://aws.amazon.com/elasticbeanstalk/
+  baseURL: ://///?Action=DescribeConfigurationSettings
+  tags: Configuration Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actiondescribeconfigurationsettings-get-openapi.md
 - name: AWS Elastic Beanstalk API Validate Configuration Settings
+  x-api-slug: aws-elastic-beanstalk-api
   description: |-
     Takes a set of configuration settings and either a configuration template or
           environment, and determines whether those values are valid.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
-  baseURL: http:://{host}//
+  baseURL: ://///?Action=ValidateConfigurationSettings
+  tags: Configuration Settings
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actionvalidateconfigurationsettings-get-openapi.md
+- name: AWS Elastic Beanstalk API
+  x-api-slug: aws-elastic-beanstalk-api
+  description: AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling
+    web applications and services developed with Java,.NET, PHP, Node.js, Python,
+    Ruby, Go, andDockeron familiar servers such as Apache, Nginx, Passenger, andIIS.You
+    can simply upload your code and Elastic Beanstalk automatically handles the deployment,
+    from capacity provisioning, load balancing, auto-scaling to application health
+    monitoring. At the same time, you retain full control over the AWS resources powering
+    your application and can access the underlying resources at any time.There is
+    no additional charge for Elastic Beanstalk - you pay only for the AWS resources
+    needed to store and run your applications.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
+  humanURL: https://aws.amazon.com/elasticbeanstalk/
+  baseURL: :///
   tags: Settings
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/action-validateconfigurationsettings-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/openapi.md
 x-common:
-- type: x-change-log
-  url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
-- type: x-command-line-interface
-  url: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
-- type: x-documentation
-  url: http://docs.aws.amazon.com/elasticbeanstalk/latest/api/Welcome.html
-- type: x-faq
-  url: https://aws.amazon.com/elasticbeanstalk/faqs/
-- type: x-forum
-  url: https://forums.aws.amazon.com/forum.jspa?forumID=86
-- type: x-getting-started
-  url: https://aws.amazon.com/elasticbeanstalk/getting-started/
-- type: x-pricing
-  url: https://aws.amazon.com/elasticbeanstalk/pricing/
-- type: x-website
-  url: https://aws.amazon.com/elasticbeanstalk/
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
 - type: x-command-line-interface
