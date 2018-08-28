@@ -4,16 +4,12 @@ x-collection-name: SendGrid
 x-complete: 0
 info:
   title: SendGrid Patch Mail Settings Address Whitelist
-  description: "**This endpoint allows you to update your current email address whitelist
-    settings.**\n\nThe address whitelist setting whitelists a specified email address
-    or domain for which mail should never be suppressed. For example, you own the
-    domain \u201Cexample.com,\u201D and one or more of your recipients use email@example.com
-    addresses, by placing example.com in the address whitelist setting, all bounces,
-    blocks, and unsubscribes logged for that domain will be ignored and sent as if
-    under normal sending conditions.\n\nMail settings allow you to tell SendGrid specific
-    things to do to every email that you send to your recipients over SendGrid\u2019s
-    [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP
-    Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+  description: |-
+    **This endpoint allows you to update your current email address whitelist settings.**
+
+    The address whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain ???example.com,??? and one or more of your recipients use email@example.com addresses, by placing example.com in the address whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -181,10 +177,10 @@ paths:
   /mail_settings:
     get:
       summary: Get Mail Settings
-      description: "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail
-        settings allow you to tell SendGrid specific things to do to every email that
-        you send to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve a list of all mail settings.**
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: GET_mail_settings
       x-api-path-slug: mail-settings-get
       parameters:
@@ -206,16 +202,12 @@ paths:
   /mail_settings/address_whitelist:
     get:
       summary: Get Mail Settings Address Whitelist
-      description: "**This endpoint allows you to retrieve your current email address
-        whitelist settings.**\n\nThe address whitelist setting whitelists a specified
-        email address or domain for which mail should never be suppressed. For example,
-        you own the domain \u201Cexample.com,\u201D and one or more of your recipients
-        use email@example.com addresses, by placing example.com in the address whitelist
-        setting, all bounces, blocks, and unsubscribes logged for that domain will
-        be ignored and sent as if under normal sending conditions.\n\nMail settings
-        allow you to tell SendGrid specific things to do to every email that you send
-        to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve your current email address whitelist settings.**
+
+        The address whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain ???example.com,??? and one or more of your recipients use email@example.com addresses, by placing example.com in the address whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.address_whitelist.get
       x-api-path-slug: mail-settingsaddress-whitelist-get
       parameters:
@@ -232,16 +224,12 @@ paths:
       - Whitelist
     patch:
       summary: Patch Mail Settings Address Whitelist
-      description: "**This endpoint allows you to update your current email address
-        whitelist settings.**\n\nThe address whitelist setting whitelists a specified
-        email address or domain for which mail should never be suppressed. For example,
-        you own the domain \u201Cexample.com,\u201D and one or more of your recipients
-        use email@example.com addresses, by placing example.com in the address whitelist
-        setting, all bounces, blocks, and unsubscribes logged for that domain will
-        be ignored and sent as if under normal sending conditions.\n\nMail settings
-        allow you to tell SendGrid specific things to do to every email that you send
-        to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to update your current email address whitelist settings.**
+
+        The address whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain ???example.com,??? and one or more of your recipients use email@example.com addresses, by placing example.com in the address whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.address_whitelist.patch
       x-api-path-slug: mail-settingsaddress-whitelist-patch
       parameters:

@@ -7,48 +7,54 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventb
 x-kinRank: "9"
 x-alexaRank: "643"
 tags: Settings
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Eventbrite Get Checkout Settings Countries Currencies
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Checkout Settings Countries Currencies
+  x-api-slug: checkout-settingscountries-currencies-get
   description: Get the countries and currencies which are supported by Eventbrite
     for ticket payment
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///checkout_settings/countries_currencies/
-  tags: Checkout,Settings,Countries,Currencies
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settingscountries-currencies-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settingscountries-currencies-get-openapi.md
-- name: Eventbrite Get Checkout Settings Methods
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Checkout Settings Methods
+  x-api-slug: checkout-settingsmethods-get
   description: Get the available checkout methods to do payments given a country and
     a currency.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///checkout_settings/methods/
-  tags: Checkout,Settings,Methods
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settingsmethods-get-openapi.md
-- name: Eventbrite Get Checkout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Checkout Settings
+  x-api-slug: checkout-settings-get
   description: Searches and returns a list of checkout_settings for the current user
     as the key checkout_settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///checkout_settings/
-  tags: Checkout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settings-get-openapi.md
-- name: Eventbrite Post Checkout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Checkout Settings
+  x-api-slug: checkout-settings-post
   description: Creates a new checkout_settings object belonging to the current user.
     Two common settings are Eventbrite Payment Processing ( checkout_method = &#8220;eventbrite&#8221;
     ) and PayPal ( checkout_method = &#8220;paypal&#8221; ). In addition to the checkout_method
@@ -56,119 +62,132 @@ apis:
     to.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///checkout_settings/
-  tags: Checkout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settings-post-openapi.md
-- name: Eventbrite Get Checkout Settings Checkout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Checkout Settings Checkout Settings
+  x-api-slug: checkout-settingscheckout-settings-id-get
   description: Get a specific checkout_settings object by ID
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///checkout_settings/:checkout_settings_id/
-  tags: Checkout,Settings,:checkout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/checkout-settingscheckout-settings-id-get-openapi.md
-- name: Eventbrite Get Events Event Checkout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Event Checkout Settings
+  x-api-slug: eventsevent-idcheckout-settings-get
   description: Gets and returns a list of checkout_settings associated with a given
     event by its event_id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/checkout_settings/
-  tags: Events,:event,Checkout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsevent-idcheckout-settings-get-openapi.md
-- name: Eventbrite Post Events Event Checkout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Event Checkout Settings
+  x-api-slug: eventsevent-idcheckout-settings-post
   description: Associate a single or set of checkout_settings with a given event by
     its event_id. This does not add more checkout settings to the event, but instead
     replaces all checkout settings for the event with the one(s) submitted. The JSON
     post body is a string list of the checkout_settings IDs you want to associate.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/checkout_settings/
-  tags: Events,:event,Checkout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsevent-idcheckout-settings-post-openapi.md
-- name: Eventbrite Get Events Event Payout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Event Payout Settings
+  x-api-slug: eventsevent-idpayout-settings-get
   description: Gets and returns the payout_settings (user instrument ID) associated
     with a given event by its event_id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/payout_settings/
-  tags: Events,:event,Payout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsevent-idpayout-settings-get-openapi.md
-- name: Eventbrite Post Events Event Payout Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Event Payout Settings
+  x-api-slug: eventsevent-idpayout-settings-post
   description: Associate a payout user instrument ID with a given event, or clear
     the association by passing a null value for the user instrument ID.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/payout_settings/
-  tags: Events,:event,Payout,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsevent-idpayout-settings-post-openapi.md
-- name: Eventbrite Get Events Display Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Display Settings
+  x-api-slug: eventsiddisplay-settings-get
   description: Retrieves the display settings for an event.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/display_settings/
-  tags: Events,Display,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsiddisplay-settings-get-openapi.md
-- name: Eventbrite Post Events Display Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Display Settings
+  x-api-slug: eventsiddisplay-settings-post
   description: Updates the display settings for an event.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/display_settings/
-  tags: Events,Display,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsiddisplay-settings-post-openapi.md
-- name: Eventbrite Get Events Ticket Buyer Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Ticket Buyer Settings
+  x-api-slug: eventsidticket-buyer-settings-get
   description: Returns a ticket_buyer_settings for an event.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_buyer_settings/
-  tags: Events,Ticket,Buyer,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsidticket-buyer-settings-get-openapi.md
-- name: Eventbrite Post Events Ticket Buyer Settings
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Ticket Buyer Settings
+  x-api-slug: eventsidticket-buyer-settings-post
   description: Updates the ticket buyer settings for an event. Returns a ticket_buyer_settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_buyer_settings/
-  tags: Events,Ticket,Buyer,Settings
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/eventsidticket-buyer-settings-post-openapi.md
-- name: Eventbrite
-  x-api-slug: eventbrite
-  description: Eventbrite brings people together through live experiences. Discover
-    events that match your passions, or create your own with online ticketing tools.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
-  humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
-  tags: Settings
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/eventbrite/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://europeana.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://eventbrite.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/eventbrite/apidescription?format=internal&ver=1351170233000
 - type: x-authentication

@@ -14,55 +14,74 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Settings
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Elastic Beanstalk API Describe Configuration Settings
-  x-api-slug: aws-elastic-beanstalk-api
+- name: AWS Elastic Beanstalk API - Describe Configuration Settings
+  x-api-slug: actiondescribeconfigurationsettings-get
   description: |-
     Returns a description of the settings for the specified configuration set, that is,
           either a configuration template or the configuration set associated with a running
           environment.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
-  baseURL: ://///?Action=DescribeConfigurationSettings
-  tags: Configuration Settings
+  baseURL: :///
+  tags: Amazon Web Services, Containers, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Deployments, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actiondescribeconfigurationsettings-get-openapi.md
-- name: AWS Elastic Beanstalk API Validate Configuration Settings
-  x-api-slug: aws-elastic-beanstalk-api
+- name: AWS Elastic Beanstalk API - Validate Configuration Settings
+  x-api-slug: actionvalidateconfigurationsettings-get
   description: |-
     Takes a set of configuration settings and either a configuration template or
           environment, and determines whether those values are valid.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
-  baseURL: ://///?Action=ValidateConfigurationSettings
-  tags: Configuration Settings
+  baseURL: :///
+  tags: Amazon Web Services, Containers, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Deployments, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actionvalidateconfigurationsettings-get-openapi.md
-- name: AWS Elastic Beanstalk API
-  x-api-slug: aws-elastic-beanstalk-api
-  description: AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling
-    web applications and services developed with Java,.NET, PHP, Node.js, Python,
-    Ruby, Go, andDockeron familiar servers such as Apache, Nginx, Passenger, andIIS.You
-    can simply upload your code and Elastic Beanstalk automatically handles the deployment,
-    from capacity provisioning, load balancing, auto-scaling to application health
-    monitoring. At the same time, you retain full control over the AWS resources powering
-    your application and can access the underlying resources at any time.There is
-    no additional charge for Elastic Beanstalk - you pay only for the AWS resources
-    needed to store and run your applications.
+- name: AWS Elastic Beanstalk API - Describe Configuration Settings
+  x-api-slug: actiondescribeconfigurationsettings-get
+  description: |-
+    Returns a description of the settings for the specified configuration set, that is,
+          either a configuration template or the configuration set associated with a running
+          environment.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
   baseURL: :///
-  tags: Settings
+  tags: Amazon Web Services, Containers, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Deployments, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actiondescribeconfigurationsettings-get-openapi.md
+- name: AWS Elastic Beanstalk API - Validate Configuration Settings
+  x-api-slug: actionvalidateconfigurationsettings-get
+  description: |-
+    Takes a set of configuration settings and either a configuration template or
+          environment, and determines whether those values are valid.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
+  humanURL: https://aws.amazon.com/elasticbeanstalk/
+  baseURL: :///
+  tags: Amazon Web Services, Containers, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Deployments, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/aws-elastic-beanstalk/actionvalidateconfigurationsettings-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.ec2.systems.manager.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://aws.elastic.beanstalk.stack.network
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
 - type: x-command-line-interface

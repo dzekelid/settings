@@ -7,43 +7,40 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddi
 x-kinRank: "9"
 x-alexaRank: "6"
 tags: Settings
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/reddit/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Reddit Get Subreddit Wiki Settings Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Settings Page
+  x-api-slug: rsubredditwikisettingspage-getnbsp
   description: Retrieve the current permission settings for page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
-  tags: Subreddit, Wiki, Settings, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/reddit/rsubredditwikisettingspage-getnbsp-openapi.md
-- name: Reddit Add Subreddit Wiki Settings Page
-  x-api-slug: reddit
+- name: Reddit - Add Subreddit Wiki Settings Page
+  x-api-slug: rsubredditwikisettingspage-postnbsp
   description: Update the permissions and visibility of wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
-  tags: Subreddit, Wiki, Settings, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/reddit/rsubredditwikisettingspage-postnbsp-openapi.md
-- name: Reddit
-  x-api-slug: reddit
-  description: Reddit is a community of millions of users engaging in the creation
-    of content and the sharing of conversation across tens of thousands of topics.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
-  humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com//
-  tags: Settings
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/reddit/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://rebilly.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://reddit.stack.network
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
 - type: x-base

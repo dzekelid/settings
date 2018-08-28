@@ -46,6 +46,25 @@ paths:
       tags:
       - Ethereum
       - Settings
+  /api/SettingSignOrder:
+    post:
+      summary: Add API Settingsignorder
+      description: Add api settingsignorder.
+      operationId: ApiSettingSignOrderPost
+      x-api-path-slug: apisettingsignorder-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Settingsignorder
   /api/MyLykkeSettings:
     get:
       summary: Get API Mylykkesettings

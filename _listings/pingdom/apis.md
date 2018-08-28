@@ -7,37 +7,55 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/456-pingdo
 x-kinRank: "7"
 x-alexaRank: "5876"
 tags: Settings
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Settings API Get Account Settings
-  x-api-slug: settings-api
+- name: Settings API - Get Account Settings
+  x-api-slug: apiversionsettings-get
   description: Returns all account-specific settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/456-pingdom.jpg
   humanURL: http://www.pingdom.com
-  baseURL: |-
-    https://api.pingdom.com///
-        /api/{version}/settings
-  tags: Settings
+  baseURL: https://api.pingdom.com//
+  tags: Monitoring, Performance, SaaS, Technology, internet, Service API, Relative
+    Data, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-openapi.md
-- name: Settings API
-  x-api-slug: settings-api
-  description: Monitor your websites availability and performance for free with Pingdom
-    and always be the first to know when your website is down. No installation required.
+- name: Settings API - Get Account Settings
+  x-api-slug: apiversionsettings-get
+  description: Returns all account-specific settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/456-pingdom.jpg
   humanURL: http://www.pingdom.com
   baseURL: https://api.pingdom.com//
-  tags: Settings
+  tags: Monitoring, Performance, SaaS, Technology, internet, Service API, Relative
+    Data, Relative StreamRank, Streams
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-openapi.md
+- name: Settings API - Get Account Settings
+  x-api-slug: apiversionsettings-get
+  description: Returns all account-specific settings.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/456-pingdom.jpg
+  humanURL: http://www.pingdom.com
+  baseURL: https://api.pingdom.com//
+  tags: Monitoring, Performance, SaaS, Technology, internet, Service API, Relative
+    Data, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/pingdom/apiversionsettings-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://pinboard.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://pingdom.stack.network
 - type: x-base
   url: https://api.pingdom.com
 - type: x-blog

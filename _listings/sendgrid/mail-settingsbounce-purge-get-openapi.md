@@ -4,12 +4,12 @@ x-collection-name: SendGrid
 x-complete: 0
 info:
   title: SendGrid Get Mail Settings Bounce Purge
-  description: "**This endpoint allows you to retrieve your current bounce purge settings.**\n\nThis
-    setting allows you to set a schedule for SendGrid to automatically delete contacts
-    from your soft and hard bounce suppression lists.\n\nMail settings allow you to
-    tell SendGrid specific things to do to every email that you send to your recipients
-    over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-    or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+  description: |-
+    **This endpoint allows you to retrieve your current bounce purge settings.**
+
+    This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -177,10 +177,10 @@ paths:
   /mail_settings:
     get:
       summary: Get Mail Settings
-      description: "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail
-        settings allow you to tell SendGrid specific things to do to every email that
-        you send to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve a list of all mail settings.**
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: GET_mail_settings
       x-api-path-slug: mail-settings-get
       parameters:
@@ -202,16 +202,12 @@ paths:
   /mail_settings/address_whitelist:
     get:
       summary: Get Mail Settings Address Whitelist
-      description: "**This endpoint allows you to retrieve your current email address
-        whitelist settings.**\n\nThe address whitelist setting whitelists a specified
-        email address or domain for which mail should never be suppressed. For example,
-        you own the domain \u201Cexample.com,\u201D and one or more of your recipients
-        use email@example.com addresses, by placing example.com in the address whitelist
-        setting, all bounces, blocks, and unsubscribes logged for that domain will
-        be ignored and sent as if under normal sending conditions.\n\nMail settings
-        allow you to tell SendGrid specific things to do to every email that you send
-        to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve your current email address whitelist settings.**
+
+        The address whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain ???example.com,??? and one or more of your recipients use email@example.com addresses, by placing example.com in the address whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.address_whitelist.get
       x-api-path-slug: mail-settingsaddress-whitelist-get
       parameters:
@@ -228,16 +224,12 @@ paths:
       - Whitelist
     patch:
       summary: Patch Mail Settings Address Whitelist
-      description: "**This endpoint allows you to update your current email address
-        whitelist settings.**\n\nThe address whitelist setting whitelists a specified
-        email address or domain for which mail should never be suppressed. For example,
-        you own the domain \u201Cexample.com,\u201D and one or more of your recipients
-        use email@example.com addresses, by placing example.com in the address whitelist
-        setting, all bounces, blocks, and unsubscribes logged for that domain will
-        be ignored and sent as if under normal sending conditions.\n\nMail settings
-        allow you to tell SendGrid specific things to do to every email that you send
-        to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to update your current email address whitelist settings.**
+
+        The address whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain ???example.com,??? and one or more of your recipients use email@example.com addresses, by placing example.com in the address whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.address_whitelist.patch
       x-api-path-slug: mail-settingsaddress-whitelist-patch
       parameters:
@@ -259,15 +251,12 @@ paths:
   /mail_settings/bcc:
     get:
       summary: Get Mail Settings Bcc
-      description: "**This endpoint allows you to retrieve your current BCC mail settings.**\n\nWhen
-        the BCC mail setting is enabled, SendGrid will automatically send a blind
-        carbon copy (BCC) to an address for every email sent without adding that address
-        to the header. Please note that only one email address may be entered in this
-        field, if you wish to distribute BCCs to multiple addresses you will need
-        to create a distribution group or use forwarding rules.\n\nMail settings allow
-        you to tell SendGrid specific things to do to every email that you send to
-        your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve your current BCC mail settings.**
+
+        When the BCC mail setting is enabled, SendGrid will automatically send a blind carbon copy (BCC) to an address for every email sent without adding that address to the header. Please note that only one email address may be entered in this field, if you wish to distribute BCCs to multiple addresses you will need to create a distribution group or use forwarding rules.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.bcc.get
       x-api-path-slug: mail-settingsbcc-get
       parameters:
@@ -283,15 +272,12 @@ paths:
       - Bcc
     patch:
       summary: Patch Mail Settings Bcc
-      description: "**This endpoint allows you to update your current BCC mail settings.**\n\nWhen
-        the BCC mail setting is enabled, SendGrid will automatically send a blind
-        carbon copy (BCC) to an address for every email sent without adding that address
-        to the header. Please note that only one email address may be entered in this
-        field, if you wish to distribute BCCs to multiple addresses you will need
-        to create a distribution group or use forwarding rules.\n\nMail settings allow
-        you to tell SendGrid specific things to do to every email that you send to
-        your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to update your current BCC mail settings.**
+
+        When the BCC mail setting is enabled, SendGrid will automatically send a blind carbon copy (BCC) to an address for every email sent without adding that address to the header. Please note that only one email address may be entered in this field, if you wish to distribute BCCs to multiple addresses you will need to create a distribution group or use forwarding rules.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.bcc.patch
       x-api-path-slug: mail-settingsbcc-patch
       parameters:
@@ -312,12 +298,12 @@ paths:
   /mail_settings/bounce_purge:
     get:
       summary: Get Mail Settings Bounce Purge
-      description: "**This endpoint allows you to retrieve your current bounce purge
-        settings.**\n\nThis setting allows you to set a schedule for SendGrid to automatically
-        delete contacts from your soft and hard bounce suppression lists.\n\nMail
-        settings allow you to tell SendGrid specific things to do to every email that
-        you send to your recipients over SendGrid\u2019s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-        or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)."
+      description: |-
+        **This endpoint allows you to retrieve your current bounce purge settings.**
+
+        This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+        Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
       operationId: mail_settings.bounce_purge.get
       x-api-path-slug: mail-settingsbounce-purge-get
       parameters:

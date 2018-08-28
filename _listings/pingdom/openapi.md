@@ -1,19 +1,18 @@
----
 swagger: "2.0"
 x-collection-name: Pingdom
 x-complete: 1
 info:
-  title: Settings API
-  description: the-settings-api-
+  title: Traceroute API
+  description: the-traceroute-api-
   version: 1.0.0
-host: api.pingdom.com
-basePath: /
 schemes:
 - http
 produces:
 - application/json
 consumes:
 - application/json
+host: api.pingdom.com
+basePath: /
 paths:
   ? |2-
 
@@ -49,4 +48,3 @@ paths:
           description: Server error
       tags:
       - Settings
----

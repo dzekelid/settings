@@ -53,6 +53,32 @@ paths:
       tags:
       - Settings
       - Setting
+  /settings/{SETTING_ID}/set:
+    post:
+      summary: Post Settings Setting Set
+      description: /settings/all
+      operationId: settingsall
+      x-api-path-slug: settingssetting-idset-post
+      parameters:
+      - in: query
+        name: SETTING_ID
+        description: Name of setting to change
+      - in: path
+        name: SETTING_ID
+      - in: query
+        name: v
+        description: All requests now accept a v=YYYYMMDD param, which indicates that
+          the client is up to date as of the specified date
+      - in: query
+        name: value
+        description: 1 for true, and 0 for false
+      responses:
+        200:
+          description: OK
+      tags:
+      - Settings
+      - Setting
+      - Set
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

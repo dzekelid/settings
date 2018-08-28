@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get User Settings Enforced Tls",
     "_postman_id": "25c6e3d1-2d2b-445e-bd8c-fb62cccee849",
-    "description": "**This endpoint allows you to retrieve your current Enforced TLS settings.**\n\nThe Enforced TLS settings specify whether or not the recipient is required to support TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html) for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled and the recipient does not support TLS or have a valid certificate, we drop the message and send a block event with “TLS required but not supported” as the description.",
+    "description": "**This endpoint allows you to retrieve your current Enforced TLS settings.**\n\nThe Enforced TLS settings specify whether or not the recipient is required to support TLS or have a valid certificate. See the [SMTP Ports User Guide](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html) for more information on opportunistic TLS.\n\n**Note:** If either setting is enabled and the recipient does not support TLS or have a valid certificate, we drop the message and send a block event with ???TLS required but not supported??? as the description.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

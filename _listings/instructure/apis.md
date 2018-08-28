@@ -7,82 +7,68 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instru
 x-kinRank: "8"
 x-alexaRank: "367"
 tags: Settings
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Instructure Canvas Courses API Get course settings
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Get course settings
+  x-api-slug: coursescourse-idsettings-get
   description: Get course settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/settings
-  tags: Courses,Course,Id,Settings
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/coursescourse-idsettings-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/coursescourse-idsettings-get-openapi.md
-- name: Instructure Canvas Courses API Update course settings
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Update course settings
+  x-api-slug: coursescourse-idsettings-put
   description: Update course settings.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/settings
-  tags: Courses,Course,Id,Settings
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/coursescourse-idsettings-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/coursescourse-idsettings-put-openapi.md
-- name: Instructure Canvas Courses API
-  x-api-slug: instructure-canvas-courses-api
-  description: Instructure makes software that makes smarter people. Products include
-    Canvas LMS, Bridge and Canvas Network.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
-  humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1
-  tags: Settings
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/openapi.md
-- name: Instructure Canvas Users API Update user settings.
-  x-api-slug: instructure-canvas-users-api
+- name: Instructure Canvas Users API - Update user settings.
+  x-api-slug: usersidsettings-get
   description: Update user settings..
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//users/{id}/settings
-  tags: Users,Id,Settings
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/usersidsettings-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/usersidsettings-get-openapi.md
-- name: Instructure Canvas Users API Update user settings.
-  x-api-slug: instructure-canvas-users-api
+- name: Instructure Canvas Users API - Update user settings.
+  x-api-slug: usersidsettings-put
   description: Update user settings..
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//users/{id}/settings
-  tags: Users,Id,Settings
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/usersidsettings-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/usersidsettings-put-openapi.md
-- name: Instructure Canvas Users API
-  x-api-slug: instructure-canvas-users-api
-  description: Instructure makes software that makes smarter people. Products include
-    Canvas LMS, Bridge and Canvas Network.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
-  humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1
-  tags: Settings
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/settings/master/_listings/instructure/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://instagram.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://instructure.stack.network
 - type: x-blog
   url: http://blog.instructure.com
 - type: x-blog-rss
